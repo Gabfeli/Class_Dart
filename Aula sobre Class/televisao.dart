@@ -18,16 +18,26 @@ class Televisao {
     }
   }
 
-  void aumentaCanal() {
-    this.canal += canal;
+  void AumentaCanal() {
+   if(this.status){
+   this.canal ++;
+   }
   }
 
-  void aumentaVolume() {
-    this.volume += volume;
+  void AumentaVolume() {
+   if(this.status){
+   this.Volume ++;
+   }
+  }
+  
+  void DiminuirVolume() {
+   if(this.status){
+   this.Volume = Volume - 1;
+   }
   }
 
   int mostraCanal() {
-    return canal;
+    return this.canal;
   }
 
   int mostraVolume() {
@@ -35,4 +45,8 @@ class Televisao {
   }
 }
 
-void main() {}
+void AumentaCanal() {
+if(this.canal){
+  this.canal ++;
+}
+}
