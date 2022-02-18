@@ -1,10 +1,21 @@
-class televisao {
-  bool status = true;
-  int canal = 3;
-  int volume = 10;
+class Televisao {
+  bool? status;
+  int? canal;
+  int volume = 0;
 
-  void ligaDesliga() {
-    this.status = status;
+  Televisao(){
+   this.status==false; 
+  }
+  
+  void LigaDesliga() {
+    if(!this.status == false){
+    this.status == true;
+      "" 3;
+      "" 10;
+    }
+    else{
+    this.status = false;
+    }
   }
 
   void aumentaCanal() {
