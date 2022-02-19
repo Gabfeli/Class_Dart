@@ -1,5 +1,5 @@
 class Empresa {
-  String nome = 'Pablao';
+  String nome = "Gab";
 
   String getNome() {
     return this.nome;
@@ -11,8 +11,6 @@ class Empresa {
 }
 
 void main() {
-  Empresa empresa = new Empresa();
-  empresa.nome = 'Pablão';
-  print(empresa);
-  print(empresa.nome);
+  Empresa empresa = Empresa();
+  print(empresa.getNome());
 }
