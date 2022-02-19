@@ -1,16 +1,26 @@
-class Empresa {
-  String nome = "Gab";
+class Aeroporto {
+  String Nome = 'Aeroporto Internacional Gabs';
+  String Cidade = 'Gabs';
 
   String getNome() {
-    return this.nome;
+    return Nome;
   }
 
-  void setNome(String nome) {
-    this.nome = nome;
+  void setNome(String Nome) {
+    this.Nome = Nome;
+  }
+
+  String getCidade() {
+    return Cidade;
+  }
+
+  void setCidade(String Cidade) {
+    this.Cidade = Cidade;
   }
 }
 
 void main() {
-  Empresa empresa = Empresa();
-  print(empresa.getNome());
+  Aeroporto aero = Aeroporto();
+  print(aero.getCidade());
+  print(aero.Nome);
 }
