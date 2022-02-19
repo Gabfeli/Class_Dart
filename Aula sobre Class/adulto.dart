@@ -1,5 +1,3 @@
-/*SET*/
-
 class Adulto {
   double peso = 0.0;
 
@@ -10,16 +8,10 @@ class Adulto {
   void Emagrecer(double quilos) {
     this.peso -= quilos;
   }
-
-  /*GET*/
-  double MostrarPeso() {
-    return this.peso;
-  }
 }
 
-main() {
+void main() {
   Adulto adulto = new Adulto();
   adulto.peso = 1.85;
-  print(adulto);
   print(adulto.peso);
 }
