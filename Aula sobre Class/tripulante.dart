@@ -11,10 +11,6 @@ class Tripulante {
 }
 
 void main() {
-  Tripulante tripulante = new Tripulante();
-  tripulante.tipo = "Comandante";
-  tripulante.tipo = "Mecânico de vôo";
-  print(tripulante);
-  print(tripulante.tipo);
-  print(tripulante.tipo.length);
+  Tripulante cub = Tripulante();
+  print(cub.getTipo());
 }
