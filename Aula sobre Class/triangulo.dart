@@ -20,4 +20,9 @@ class triangulo {
   }
 }
 
-void main() {}
+void main() {
+  triangulo cub = triangulo();
+  print(cub.getBase());
+  print(cub.getAltura());
+  print(cub.calcArea);
+}
