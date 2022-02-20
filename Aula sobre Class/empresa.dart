@@ -1,26 +1,36 @@
-class Aeroporto {
-  String Nome = 'Aeroporto Internacional Gabs';
-  String Cidade = 'Gabs';
+class Voo {
+  int Codigo = 0;
+  String Origem = 'San Augostino';
+  String Destino = 'Conepsias';
 
-  String getNome() {
-    return Nome;
+  int getCodigo() {
+    return Codigo;
   }
 
-  void setNome(String Nome) {
-    this.Nome = Nome;
+  void setCodigo(int Codigo) {
+    this.Codigo = Codigo;
   }
 
-  String getCidade() {
-    return Cidade;
+  String getOrigem() {
+    return Origem;
   }
 
-  void setCidade(String Cidade) {
-    this.Cidade = Cidade;
+  void setOrigem() {
+    this.Origem = Origem;
+  }
+
+  String getDestino() {
+    return Destino;
+  }
+
+  void setDestino() {
+    this.Destino = Destino;
   }
 }
 
 void main() {
-  Aeroporto aero = Aeroporto();
-  print(aero.getCidade());
-  print(aero.Nome);
+  Voo voo = Voo();
+  print(voo.getCodigo());
+  print(voo.getOrigem);
+  print(voo.getDestino);
 }
