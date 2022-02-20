@@ -7,7 +7,7 @@ class Voo {
     return Codigo;
   }
 
-  setCodigo(int Codigo) {
+  void setCodigo(int Codigo) {
     this.Codigo = Codigo;
   }
 
@@ -15,7 +15,7 @@ class Voo {
     return Origem;
   }
 
-  setOrigem() {
+  void setOrigem(String valor) {
     this.Origem = Origem;
   }
 
@@ -23,25 +23,14 @@ class Voo {
     return Destino;
   }
 
-  setDestino() {
+  void setDestino(String valor) {
     this.Destino = Destino;
   }
 }
 
 void main() {
-  Voo voo = new Voo();
-  voo.Codigo = 1;
-  voo.Codigo = 2;
-  voo.Codigo = 3;
-  voo.Destino = 'Aeroporto Internacional de Los Santos';
-  voo.Destino = 'Aeroporto Internacional de San Fierro';
-  voo.Destino = 'Aeroporto Internacional de Las Venturas';
-  voo.Origem = 'Aeroporto Internacional de Las Venturas';
-  voo.Origem = 'Aeroporto Internacional de Los Santos';
-  voo.Origem = 'Aeroporto Internacional de San Fierro';
-  print(voo);
-
-  print(voo.Codigo);
-  print(voo.Destino);
-  print(voo.Origem);
+  Voo voo = Voo();
+  print(voo.getCodigo());
+  print(voo.getDestino());
+  print(voo.getOrigem());
 }
