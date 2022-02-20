@@ -1,6 +1,6 @@
 class Aeroporto {
-  String Nome = 'Aeroporto Internacional de Los Santos';
-  String Cidade = 'Los Santos';
+  String Nome = 'Aero Gab';
+  String Cidade = 'San Augostinho';
 
   String getNome() {
     return Nome;
@@ -20,10 +20,7 @@ class Aeroporto {
 }
 
 void main() {
-  Aeroporto aeroporto = new Aeroporto();
-  aeroporto.Nome = "Aeroporto Internacional de Los Santos";
-  aeroporto.Cidade = "Los Santos";
-  print(aeroporto);
-  print(aeroporto.Nome);
-  print(aeroporto.Cidade);
+  Aeroporto aero = Aeroporto();
+  print(aero.getCidade());
+  print(aero.Nome);
 }
