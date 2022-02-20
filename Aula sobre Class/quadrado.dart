@@ -21,4 +21,9 @@ class quadrado {
   }
 }
 
-void main() {}
+void main() {
+  quadrado cub = quadrado();
+  print(cub.getBase());
+  print(cub.getAltura());
+  print(cub.calcArea);
+}
