@@ -1,29 +1,31 @@
 class quadrado {
-  int base = 0;
-  int altura = 0;
+  int Base = 0;
+  int Altura = 0;
   int calcArea = 0;
 
-  int getAltura() {
-    return this.altura;
+  void getBase() {
+    return this.Base;
   }
 
-  void setAltura(int altura) {
-    this.altura += altura;
-    this.altura -= altura;
+  void getAltura() {
+    return this.Altura;
   }
 
-  int getBase() {
-    return this.base;
+  void getBase(int Base){
+     this.Base = Base;
   }
 
-  void setBase() {
-    this.base = base;
+  void getAltura(int Altura){
+     this.Altura = Altura;
   }
+
+
 }
 
-void main() {
-  quadrado cub = quadrado();
-  print(cub.getBase());
-  print(cub.getAltura());
-  print(cub.calcArea);
+void main(List<String>args) {
+ Quadrado recebe = Quadrado();
+ recebe.setAltura(10);
+ recebe.setBase(15);
+ print(recebe.calcularArea());
+
 }
