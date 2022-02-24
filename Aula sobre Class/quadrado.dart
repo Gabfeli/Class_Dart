@@ -11,11 +11,11 @@ class quadrado {
     return this.Altura;
   }
 
-  void getBase(int Base){
+  void setBase(int Base){
      this.Base = Base;
   }
 
-  void getAltura(int Altura){
+  void setAltura(int Altura){
      this.Altura = Altura;
   }
   
