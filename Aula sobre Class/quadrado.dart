@@ -18,7 +18,10 @@ class quadrado {
   void getAltura(int Altura){
      this.Altura = Altura;
   }
-
+  
+int calcularArea(){
+    return this.base * this.altura;
+}
 
 }
 
